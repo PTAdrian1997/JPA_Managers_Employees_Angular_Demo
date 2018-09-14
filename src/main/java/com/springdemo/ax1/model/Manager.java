@@ -4,12 +4,12 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 @Entity
-@Table(name = "posts")
+@Table(name = "managers")
 public class Manager extends AuditModel{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "manager_id")
     private Long id;
 
     @NotNull
